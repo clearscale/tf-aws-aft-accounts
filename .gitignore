@@ -1,5 +1,7 @@
-scripts/output/*
+scripts/output*
 scripts/__pycache__/*
+
+# terraform
 .terraform/
 .terraform.lock.hcl
 .terraform.tfstate.lock.info
