@@ -1,1 +1,3 @@
-Sandbox1,Sandbox,nonprod,aws-sandbox1@customer.com,aws-sandbox1@customer.com,Sandbox,nonprod
+Sandbox,DEV,aws-sandbox@customer.com,aws-sandbox@customer.com,Sandbox,Dev
+Dev,DEV,aws-dev@customer.com,aws-dev@customer.com,Dev,Dev
+Live,PROD,aws-live@customer.com,aws-live@customer.com,Live,Prod
