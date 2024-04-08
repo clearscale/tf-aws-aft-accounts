@@ -52,6 +52,12 @@ To create a new account, create a new `.tf` file with the account name and updat
 
 - **account_customizations_name** captures the account template folder in the [tf-aws-aft-customizations](https://github.com/clearscale/tf-aws-aft-customization-account) repository.
 
+## Managing Control Tower Accounts with AFT
+
+> To configure resources in the Log-Archive or Audit accounts, you can add them to AFT using the same process you would to provision a new account. Create a new account request but use the existing account details (Account Name, Account email address and Organizational Unit).
+
+> For additional information, refer to the accepted answer on [repost.aws](https://repost.aws/questions/QUGzXTnakbS_CFfJIf14giuw/control-tower-automation#ANCWgF8LyuSTy9wUrIGpeNEA).
+
 ## Running pipelines via Step Functions
 
 AFT provides an AWS Step Function called `aft-invoke-customizations` in the AFT management account. The purpose of that function is to re-invoke the customization pipeline for AFT-provisioned accounts.
