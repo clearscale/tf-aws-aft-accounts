@@ -52,11 +52,11 @@ To create a new account, create a new `.tf` file with the account name and updat
 
 - **account_customizations_name** captures the account template folder in the [tf-aws-aft-customizations](https://github.com/clearscale/tf-aws-aft-customization-account) repository.
 
-## Running pipelines
+## Running pipelines via Step Functions
 
-AFT provides an AWS Step Function called aft-invoke-customizations in the AFT management account. The purpose of that function is to re-invoke the customization pipeline for AFT-provisioned accounts.
+AFT provides an AWS Step Function called `aft-invoke-customizations` in the AFT management account. The purpose of that function is to re-invoke the customization pipeline for AFT-provisioned accounts.
 
-Here is the full event schema (JSON format) you can create to pass input to the aft-invoke-customizations AWS Step Function.
+Here is the full event schema (JSON format) you can create to pass input to the `aft-invoke-customizations` AWS Step Function.
 
 ```json
 {
