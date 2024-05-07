@@ -8,6 +8,10 @@ All accounts created and managed by AFT are located in the [terraform](./terrafo
 
 https://docs.aws.amazon.com/controltower/latest/userguide/aft-getting-started.html
 
+## AWS Landing Zone Best Practices
+
+https://docs.aws.amazon.com/controltower/latest/userguide/aws-multi-account-landing-zone.html
+
 ## What belongs in here?
 
 AFT Account definitions, described in Terraform code, for AWS accounts that should automatically be deployed and managed by AWS Control Tower.
