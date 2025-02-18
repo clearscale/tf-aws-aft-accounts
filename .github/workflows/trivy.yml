@@ -1,6 +1,6 @@
 name: Trivy Security Scanner
 on: workflow_dispatch
-
+    
 jobs:
   build:
     name: Build
@@ -9,17 +9,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+              
       - name: Aqua Security Trivy
         uses: aquasecurity/trivy-action@master
         with:
-          scan-type: "fs"
-          scanners: "misconfig,secret"
+          scan-type: 'fs'
+          scanners: 'misconfig,secret'
           ignore-unfixed: true
-          format: "sarif"
-          output: "trivy-results.sarif"
-          severity: "CRITICAL"
+          format: 'sarif'
+          output: 'trivy-results.sarif'
+          severity: 'CRITICAL'
 
-      - name: Upload Trivy scan results to GitHub Security tab
-        uses: github/codeql-action/upload-sarif@v2
-        with:
-          sarif_file: "trivy-results.sarif"
+      # - name: Upload Trivy scan results to GitHub Security tab
+      #   uses: github/codeql-action/upload-sarif@v3
+      #   with:
+      #     sarif_file: 'trivy-results.sarif'
